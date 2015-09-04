@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<script language="javascript" type="text/javascript" src="{{"/javascripts/utils.js" | prepend: site.baseurl}}"></script>
+
+<div id="gallery" class="container-fluid">
+
+	{% image_set images --container-tag=div --wrap-tag=div %}
+
+</div>
+
+<script>
+	//preprocessing
+	
+	$(document).ready(function() {
+		$('#gallery').insertAfter('.navbar');
+		var images = "#gallery .image-set img";
+		window.onload = function() {
+			var $imgs = $(images);
+			_.each($imgs, function(img) {
+				$(img).attr("data-aspect-ratio", img.width/img.height);
+				$(img).attr("data-original-height", img.height);
+				$(img).attr("data-original-width", img.width);
+			});
+			galleryify(images);
+		}
+		
+		$(window).bind('resize', function () { 
+			galleryify(images);
+		});
+	});
+</script>

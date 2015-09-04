@@ -1,0 +1,12 @@
+# Site settings
+title: Andrew Svoboda
+email: svoboda.andrew@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Powered by Jekyll. A place to show off my hobbies, interests, and projects.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://andrewsvoboda.me" # the base hostname & protocol for your site
+github_username: asvoboda
+
+# Build settings
+markdown: kramdown
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
