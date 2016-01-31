@@ -52,15 +52,15 @@ body {
 #gallery {
     padding: 0;
 }
-#cover {
-	height: 100%;
-	width: 100%;
-	background-position: 50% 50%;
+.cover {
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;	
-	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: fixed;
 }
 nav.navbar {
