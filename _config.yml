@@ -9,4 +9,4 @@ github_username: asvoboda
 
 # Build settings
 markdown: kramdown
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'procfile', 'Rakefile', 'deploy.sh', 'README.md']
